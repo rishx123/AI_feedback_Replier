@@ -56,6 +56,7 @@ branches=RunnableBranch(
 )
 classify_chain=classify_feedback|model|StrOutputParser()
 chain=classify_chain|branches
-review="this product is terrible, it broke after first use."
-result=chain.invoke({"feedback": review})
+reviews="this product is terrible, it broke after first use."
+result=chain.invoke({"feedback": reviews})
 print(result)
+#some feedbacks 
